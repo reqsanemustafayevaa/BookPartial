@@ -1,0 +1,23 @@
+﻿@model Author
+
+
+<div class="d-flex justify-content-between align-items-center container-fluid ">
+    <h1>Update author</h1>
+    <div><a class="btn btn-primary" asp-action="index" asp-controller="author">Go To Home</a></div>
+</div>
+<div class="container-fluid">
+    <form method="post" >
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="" class="form-label">FullName </label>
+                <input asp-for="FullName" type="text" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="FullName" style="color:red"></span>
+
+            </div>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>

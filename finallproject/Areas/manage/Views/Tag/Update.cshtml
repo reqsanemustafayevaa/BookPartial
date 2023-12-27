@@ -1,0 +1,23 @@
+﻿@model Tag
+
+
+<div class="d-flex justify-content-between align-items-center container-fluid ">
+    <h1>Update tag</h1>
+    <div><a class="btn btn-primary" asp-action="index" asp-controller="tag">Go To Home</a></div>
+</div>
+<div class="container-fluid">
+    <form method="post">
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Name </label>
+                <input asp-for="Name" type="text" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="Name" style="color:red"></span>
+
+            </div>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
